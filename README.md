@@ -1,2 +1,2 @@
 # WallpaperApplication
-###This is an Android application for practicing. 
+This is an Android application for practicing. 
