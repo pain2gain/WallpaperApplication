@@ -4,6 +4,7 @@ import android.app.job.JobParameters;
 import android.app.job.JobService;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -26,7 +27,7 @@ public class JobSchedulerService extends JobService {
     @Override
     public boolean onStartJob(JobParameters params) {
         Log.i(TAG,"on start job");
-        downLoadPics();
+        doJobScheduler();
         return true;
     }
 
@@ -36,11 +37,11 @@ public class JobSchedulerService extends JobService {
     }
 
 
-    private  void downLoadPics(){
+    private  void doJobScheduler(){
         new Thread(new Runnable() {
             @Override
             public void run() {
-
+                Looper.prepare();
                 //下载壁纸
                 if(Tools.checkNetworkConnect(getApplicationContext())) {
                     new AsyncDownloadTask(getApplicationContext(), 500, 600).execute(urlAPI);
@@ -53,6 +54,8 @@ public class JobSchedulerService extends JobService {
                 String dirPicscache =getCacheDir().getAbsolutePath()+ File.separator+"picscache"+File.separator;
                 addWallpaper2Database(dirPics);
                 addWallpaper2Database(dirPicscache);
+
+                Looper.loop();
             }
         }).start();
     }
