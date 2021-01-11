@@ -446,7 +446,6 @@ public class ImageViewTouchListener implements ImageView.OnTouchListener {
                     @Override
                     public void run() {
                         Looper.prepare();
-
                         Tools.saveImage2Local(wallPaper.getName(),mContext,dir,true);
                         Looper.loop();
                     }

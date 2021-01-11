@@ -39,12 +39,19 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**wallpaper对于recyclerview适配器*/
     private WallPaperAdapter mAdapter;
+    /**recyclerView */
     private RecyclerView mRecyclerView;
+    /**wallpaper的List容器*/
     private List<WallPaper> listWallPaper =new ArrayList();
+    /**所有的需要加载的壁纸的名字*/
     private static List<String> listAllNames=new ArrayList();
+    /**加载好的的壁纸的名字，可以传递给其他activity，顺序表示现实的阿顺序*/
     private static String[] wallpaperName;
+    /**每次加载的图片数量*/
     private final int loadItemAmount = 8;
+    /**需要申请的权限*/
     private static String[]  REQUEST_PERMISSION= {Manifest.permission.READ_EXTERNAL_STORAGE,
                                                     Manifest.permission.WRITE_EXTERNAL_STORAGE,
                                                     Manifest.permission.INTERNET,
@@ -59,22 +66,23 @@ public class MainActivity extends AppCompatActivity {
         if (actionTopBar!=null){
             actionTopBar.hide();
         }
-        //获取权限
+        //获取权限，这里只用write_external_storage 来判断有没有权限，获取以上全部的权限
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
                     REQUEST_PERMISSION, 1);
         }
 
-        //启动local service
+        //启动local service，用于定时下载图片和更新数据库
         startService(new Intent(this,LocalDownloadService.class));
 
-
+        //要加载的图片
         final List<String> listWallPaperGot;
         listAllNames = Tools.initWallPaper(this);
         wallpaperName=listAllNames.toArray(new String[listAllNames.size()]);
         listWallPaperGot = Tools.getWallpaperToLoad(listAllNames,loadItemAmount);
 
+        //bitmap 缩小五倍，并且将要加载的wallpaper加入listWallpaper中
         final BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
         bitmapOptions.inSampleSize=5;
         listWallPaper = Tools.loadWallpaperWithBitmap(this,listWallPaperGot,bitmapOptions);
@@ -98,22 +106,19 @@ public class MainActivity extends AppCompatActivity {
            @Override
             public void onLoadMore(){
 
+               //另外开一个线程通知recyclerView数据改变了
                Handler handler = new Handler();
                final Runnable runnable = new Runnable() {
                    public void run() {
                        mAdapter.notifyDataSetChanged();
                    }
                };
-               File file = new File(getCacheDir().getAbsolutePath(),"picscache");
+               //下载的文件在cache/picscache/文件中，获取图片名称
+               File file = Tools.createFileDir(getBaseContext(),"picscache");
                String[] picName = file.list();
-               if (listAllNames.size()>=loadItemAmount){
-                   List<String> listAddedNames = Tools.getWallpaperToLoad(listAllNames,loadItemAmount);
-                   List<WallPaper> tempWallpaper = Tools.loadWallpaperWithBitmap(getBaseContext(),listAddedNames,bitmapOptions);
-                   for (int i=0;i<tempWallpaper.size();i++){
-                       listWallPaper.add(tempWallpaper.get(i));
-                   }
-                   handler.post(runnable);
-               }else if (listAllNames.size()<loadItemAmount && listAllNames.size()>0){
+
+               if (listAllNames.size()>0){
+                   //当assets预置的图片还有时
                    List<String> listAddedNames = Tools.getWallpaperToLoad(listAllNames,loadItemAmount);
                    List<WallPaper> tempWallpaper = Tools.loadWallpaperWithBitmap(getBaseContext(),listAddedNames,bitmapOptions);
                    for (int i=0;i<tempWallpaper.size();i++){
@@ -121,7 +126,8 @@ public class MainActivity extends AppCompatActivity {
                    }
                    handler.post(runnable);
                }else if (listAllNames.size()==0){
-                   for (int i =picName.length-1;i>0;i--){
+                   //加载picscache下载的图片
+                 /*  for (int i =picName.length-1;i>0;i--){
                        Bitmap tempBitmap =imageDownLoader.getBitmapCache(picName[i]);
                        WallPaper wallPaper = new WallPaper(picName[i],tempBitmap,file.getAbsolutePath());
                       /* Boolean isNewItemAdded = false;
@@ -133,9 +139,9 @@ public class MainActivity extends AppCompatActivity {
                            }
                        }
                        if (isNewItemAdded) handler.post(runnable);*/
-                      listWallPaper.add(wallPaper);
+                /*      listWallPaper.add(wallPaper);
                    }
-                   handler.post(runnable);
+                   handler.post(runnable);**/
                }
            }
         });
