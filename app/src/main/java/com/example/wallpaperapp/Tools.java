@@ -112,10 +112,10 @@ public class Tools {
         try {
             WallpaperManager wpm = WallpaperManager.getInstance(context);
             wpm.setBitmap(bitmap);
-            Toast.makeText(context, "设置成功", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "设置为壁纸成功", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
-            Toast.makeText(context, "设置失败", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "设置为壁纸失败", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -245,7 +245,6 @@ public class Tools {
         }
 
     }
-
     public static List<Integer> getRandomNumber(int range, int account){
         if (range <=0 || account<=0) return null;
 
@@ -258,5 +257,6 @@ public class Tools {
             }
         }
         return numberChoose;
-    }*/
+    }
+    */
 }

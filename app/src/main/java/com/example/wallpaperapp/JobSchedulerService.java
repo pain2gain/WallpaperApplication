@@ -1,14 +1,20 @@
 package com.example.wallpaperapp;
 
+import android.app.Notification;
 import android.app.job.JobParameters;
 import android.app.job.JobService;
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 
 public class JobSchedulerService extends JobService {
@@ -36,7 +42,6 @@ public class JobSchedulerService extends JobService {
         return false;
     }
 
-
     private  void doJobScheduler(){
         new Thread(new Runnable() {
             @Override
@@ -44,17 +49,21 @@ public class JobSchedulerService extends JobService {
                 Looper.prepare();
                 //下载壁纸
                 if(Tools.checkNetworkConnect(getApplicationContext())) {
+                    Log.i(TAG,"start downloading pics");
                     new AsyncDownloadTask(getApplicationContext(), 500, 600).execute(urlAPI);
                 }else{
+                    Log.i(TAG,"failed to start downloading pics, no network");
                     Toast.makeText(getApplicationContext(),"无网络连接",Toast.LENGTH_SHORT).show();
                 }
-
                 //将wallpaper添加到数据库中
                 String dirPics =getCacheDir().getAbsolutePath()+ File.separator+"pics"+File.separator;
                 String dirPicscache =getCacheDir().getAbsolutePath()+ File.separator+"picscache"+File.separator;
+                Log.i(TAG,"Add downloaded pics into DB");
                 addWallpaper2Database(dirPics);
                 addWallpaper2Database(dirPicscache);
-
+                //更换壁纸
+                Log.i(TAG,"start changing wallpaper");
+                changeRandomWallpaper();
                 Looper.loop();
             }
         }).start();
@@ -64,7 +73,7 @@ public class JobSchedulerService extends JobService {
     private void addWallpaper2Database(String dir){
         File fileWallpaper = new File(dir);
         if (!fileWallpaper.exists()){
-            Log.i("Wallpaper to DB","No wallpaperFile exits");
+            Log.i(TAG,"Wallpaper to DB"+"No wallpaperFile exits");
             return;
         }
         DatabaseHelper dbHelper= new DatabaseHelper(this,"Wallpaper.db",null,6);
@@ -72,7 +81,7 @@ public class JobSchedulerService extends JobService {
 
         String[] arrayWallpaperInFile = fileWallpaper.list();
         if (arrayWallpaperInFile.length==0){
-            Log.i("Wallpaper to DB","No wallpaper exits");
+            Log.i(TAG,"Wallpaper to DB"+"No wallpaper exits");
             return;
         }
 
@@ -90,6 +99,17 @@ public class JobSchedulerService extends JobService {
 
                 db.replace("wallpaper_table",null,values);
             }
+        }
+    }
+
+    private void changeRandomWallpaper(){
+        try {
+            String[] picasNames = getAssets().list("pics");
+            int randomNumber = (int)Math.ceil(Math.random()*picasNames.length);
+            Bitmap bitmap = Tools.getBitmapFromAssets(this,picasNames[randomNumber],null);
+            Tools.saveImageAsWallpaper(bitmap,this);
+        }catch (IOException e){
+            e.printStackTrace();
         }
     }
 

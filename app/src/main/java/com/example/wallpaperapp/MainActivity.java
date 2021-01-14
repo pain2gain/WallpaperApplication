@@ -19,6 +19,7 @@ import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -74,7 +75,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //启动local service，用于定时下载图片和更新数据库
-        startService(new Intent(this,LocalDownloadService.class));
+        //startService(new Intent(this,LocalDownloadService.class));
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            startForegroundService(new Intent(this, LocalDownloadService.class));
+        } else {
+            startService(new Intent(this, LocalDownloadService.class));
+        }
 
         //要加载的图片
         final List<String> listWallPaperGot;

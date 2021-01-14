@@ -22,11 +22,10 @@ public class AsyncDownloadTask extends AsyncTask<String,Integer,String> {
 
     @Override
     protected void onPreExecute() {
-        Log.i(TAG, "start download pics");
+        Log.i(TAG, "start downloading pics");
     }
     @Override
     protected String doInBackground(final String... params) {
-
                 ImageDownLoader imageDownLoader = new ImageDownLoader(mContext);
                 imageDownLoader.loadAllImages(params[0], width, height);
 

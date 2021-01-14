@@ -1,0 +1,7 @@
+#Thu Jan 14 18:59:27 CST 2021
+base.0=/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex

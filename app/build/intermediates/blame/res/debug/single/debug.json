@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/layout_footer.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/layout/footer.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/drawable_coffee_drink.jpg.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable/coffee_drink.jpg"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/drawable_fabric_texture_green.jpg.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable/fabric_texture_green.jpg"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/layout_activity_pic_view.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/layout/activity_pic_view.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/layout_header.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/layout/header.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/drawable_point_white.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable/point_white.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/layout_popup_button.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/layout/popup_button.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/drawable_point_grey.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable/point_grey.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/layout_wallpaper_item.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/layout/wallpaper_item.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/drawable_building_sky_light.jpg.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable/building_sky_light.jpg"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/drawable_couple_love_romance.jpg.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable/couple_love_romance.jpg"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/layout_main_activity_top_bar.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/layout/main_activity_top_bar.xml"
+    },
+    {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    }
+]
