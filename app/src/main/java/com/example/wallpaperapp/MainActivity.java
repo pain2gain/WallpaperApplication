@@ -74,15 +74,13 @@ public class MainActivity extends AppCompatActivity {
                     REQUEST_PERMISSION, 1);
         }
 
-        //启动local service，用于定时下载图片和更新数据库
+        //启动local service，用于定时下载图片和更新数据库,和更换壁纸
         //startService(new Intent(this,LocalDownloadService.class));
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             startForegroundService(new Intent(this, LocalDownloadService.class));
         } else {
             startService(new Intent(this, LocalDownloadService.class));
         }
-
         //要加载的图片
         final List<String> listWallPaperGot;
         listAllNames = Tools.initWallPaper(this);
@@ -103,10 +101,10 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
         //Swipe组件 提供上滑刷新功能
-        final SwipeRefreshLayout mRefreshLayout;
+       /* final SwipeRefreshLayout mRefreshLayout;
         mRefreshLayout =findViewById(R.id.swipe_refresh);
         mRefreshLayout.setOnRefreshListener(new SwipeRefresh(getBaseContext(),listWallPaper,wallpaperName,mAdapter,mRefreshLayout));
-
+*/
         final ImageDownLoader imageDownLoader = new ImageDownLoader(this);
         //监听recyclerView滚动事件，每次添加8个，并且将List更新，剩下没有加载的图片名
         mRecyclerView.addOnScrollListener(new ScrollToLoadListener(listWallPaper) {

@@ -92,6 +92,10 @@
         "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/drawable/building_sky_light.jpg"
     },
     {
+        "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/layout_fragment_empty.xml.flat",
+        "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/layout/fragment_empty.xml"
+    },
+    {
         "merged": "/home/ts/AndroidStudioProjects/WallPaperApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },

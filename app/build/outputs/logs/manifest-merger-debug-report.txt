@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/ts/.gradle/caches/transforms-2/files-2.1/61c3f515ffa18fee8dec145af2d51b00/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ts/.gradle/caches/transforms-2/files-2.1/448f23e8eac4f156077d0a03db47688b/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/ts/.gradle/caches/transforms-2/files-2.1/1e2ec140616ebc9b0d43d5178b6fd490/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -33,20 +33,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ts/.gradle/caches/t
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/ts/.gradle/caches/transforms-2/files-2.1/b5a6f850a8cbad14b557755a4a739154/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ts/.gradle/caches/transforms-2/files-2.1/01db54804b66b2b8f058ea79386ae547/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ts/.gradle/caches/transforms-2/files-2.1/99cdd22df1372f469fb8c2408d666ead/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
 	package
 		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
 		INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-55:12
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:1-62:12
 		INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:2:11-69
@@ -79,7 +79,7 @@ ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManif
 	android:name
 		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:11:22-74
 application
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:12:5-53:19
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:12:5-60:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ts/.gradle/caches/transforms-2/files-2.1/448f23e8eac4f156077d0a03db47688b/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ts/.gradle/caches/transforms-2/files-2.1/448f23e8eac4f156077d0a03db47688b/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.0.1] /home/ts/.gradle/caches/transforms-2/files-2.1/4faf649b4cd298de4b4cb9469a754263/core-1.0.1/AndroidManifest.xml:22:5-89
@@ -96,6 +96,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/ts/.g
 		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:14:9-44
 	android:roundIcon
 		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:19:9-54
+	android:persistent
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:22:9-34
 	android:largeHeap
 		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:17:9-33
 	android:icon
@@ -106,62 +108,66 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/ts/.g
 		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:21:9-40
 	android:networkSecurityConfig
 		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:18:9-69
-service#com.example.wallpaperapp.RemoteServiceHttp
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:22:9-26:56
-	android:process
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:26:13-45
-	android:enabled
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:24:13-35
-	android:exported
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:25:13-36
-	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:23:13-46
 service#com.example.wallpaperapp.LocalDownloadService
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:27:9-30:39
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:28:9-32:40
 	android:enabled
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:29:13-35
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:30:13-35
 	android:exported
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:30:13-36
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:31:13-36
+	android:persistent
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:32:13-38
 	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:28:13-49
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:29:13-49
 service#com.example.wallpaperapp.JobSchedulerService
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:31:9-35:38
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:33:9-37:38
 	android:enabled
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:34:13-35
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:36:13-35
 	android:exported
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:35:13-36
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:37:13-36
 	android:permission
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:33:13-69
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:35:13-69
 	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:32:13-48
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:34:13-48
 activity#com.example.wallpaperapp.PicViewActivity
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:37:9-53
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:39:9-40:46
+	android:theme
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:40:13-44
 	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:37:19-50
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:39:19-50
 activity#com.example.wallpaperapp.MainActivity
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:38:9-44:20
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:41:9-48:20
+	android:exported
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:43:13-36
+	android:theme
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:42:13-44
 	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:38:19-47
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:41:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:39:13-43:29
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:44:13-47:29
 action#android.intent.action.MAIN
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:40:17-69
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:45:17-69
 	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:40:25-66
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:42:17-77
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:42:27-74
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:27-74
 receiver#com.example.wallpaperapp.BootCompletedReceiver
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:9-51:20
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:50:9-58:20
+	android:enabled
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:51:13-35
+	android:exported
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:52:13-36
+	android:priority
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:19-56
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:50:19-56
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+category:name:android.intent.category.LAUNCHER
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:47:13-50:29
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:54:13-57:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:48:17-79
+ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:55:17-79
 	android:name
-		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:48:25-76
+		ADDED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:55:25-76
 uses-sdk
 INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml

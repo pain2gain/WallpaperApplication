@@ -35,13 +35,14 @@ public class ImageViewTouchListener implements ImageView.OnTouchListener {
     private RelativeLayout parentView;
     private Context mContext;
     private int position;
-    private List<WallPaper> mListWallPaper;
+    //private List<WallPaper> mListWallPaper;
+    private  WallPaper mWallPaper;
     private ZoomImageView zoomImageView;
 
-    public ImageViewTouchListener(Context mc,int posi,List<WallPaper> list, RelativeLayout rlatv,ZoomImageView iv){
+    public ImageViewTouchListener(Context mc,int posi,WallPaper wp, RelativeLayout rlatv,ZoomImageView iv){
         mContext = mc;
         position = posi;
-        mListWallPaper = list;
+        mWallPaper = wp;
         parentView = rlatv;
         zoomImageView = iv;
     }
@@ -421,7 +422,7 @@ public class ImageViewTouchListener implements ImageView.OnTouchListener {
         Button popupButtonSave = mLinearLayout.findViewById(R.id.popup_button_save);
         popupButtonWallpaper.setAlpha((float) 0.9);
 
-        final WallPaper wallPaper = mListWallPaper.get(position);
+        final WallPaper wallPaper = mWallPaper;
 
         popupButtonWallpaper.setOnClickListener(new View.OnClickListener() {
             @Override

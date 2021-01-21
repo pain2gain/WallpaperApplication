@@ -812,7 +812,6 @@ id standard
 id start
 id submenuarrow
 id submit_area
-id swipe_refresh
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -828,6 +827,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tv_click
 id uniform
 id up
 id useLogo
@@ -871,6 +871,7 @@ layout abc_tooltip
 layout activity_main
 layout activity_pic_view
 layout footer
+layout fragment_empty
 layout header
 layout main_activity_top_bar
 layout notification_action

@@ -33,7 +33,7 @@
 17-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:11:22-74
 18
 19    <application
-19-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:12:5-53:19
+19-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:12:5-60:19
 20        android:allowBackup="true"
 20-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:13:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -50,75 +50,91 @@
 27-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:17:9-33
 28        android:networkSecurityConfig="@xml/network_security_config"
 28-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:18:9-69
-29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:19:9-54
-30        android:supportsRtl="true"
-30-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:20:9-35
-31        android:testOnly="true"
-32        android:theme="@style/AppTheme" >
-32-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:21:9-40
-33        <service
-33-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:22:9-26:56
-34            android:name="com.example.wallpaperapp.RemoteServiceHttp"
-34-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:23:13-46
-35            android:enabled="true"
-35-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:24:13-35
-36            android:exported="true"
-36-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:25:13-36
-37            android:process=":RemoteProcess" />
-37-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:26:13-45
-38        <service
-38-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:27:9-30:39
-39            android:name="com.example.wallpaperapp.LocalDownloadService"
-39-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:28:13-49
-40            android:enabled="true"
-40-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:29:13-35
-41            android:exported="true" />
-41-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:30:13-36
+29        android:persistent="true"
+29-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:22:9-34
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:19:9-54
+31        android:supportsRtl="true"
+31-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:20:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:21:9-40
+34
+35        <!--
+36            <service
+37            android:name=".RemoteServiceHttp"
+38            android:enabled="true"
+39            android:exported="true"
+40            android:process=":RemoteProcess"></service>
+41        -->
 42        <service
-42-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:31:9-35:38
-43            android:name="com.example.wallpaperapp.JobSchedulerService"
-43-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:32:13-48
+42-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:28:9-32:40
+43            android:name="com.example.wallpaperapp.LocalDownloadService"
+43-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:29:13-49
 44            android:enabled="true"
-44-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:34:13-35
+44-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:30:13-35
 45            android:exported="true"
-45-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:35:13-36
-46            android:permission="android.permission.BIND_JOB_SERVICE" />
-46-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:33:13-69
-47
-48        <activity android:name="com.example.wallpaperapp.PicViewActivity" />
-48-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:37:9-53
-48-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:37:19-50
-49        <activity android:name="com.example.wallpaperapp.MainActivity" >
-49-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:38:9-44:20
-49-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:38:19-47
-50            <intent-filter>
-50-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:39:13-43:29
-51                <action android:name="android.intent.action.MAIN" />
-51-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:40:17-69
-51-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:40:25-66
+45-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:31:13-36
+46            android:persistent="true" />
+46-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:32:13-38
+47        <service
+47-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:33:9-37:38
+48            android:name="com.example.wallpaperapp.JobSchedulerService"
+48-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:34:13-48
+49            android:enabled="true"
+49-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:36:13-35
+50            android:exported="true"
+50-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:37:13-36
+51            android:permission="android.permission.BIND_JOB_SERVICE" />
+51-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:35:13-69
 52
-53                <category android:name="android.intent.category.LAUNCHER" />
-53-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:42:17-77
-53-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:42:27-74
-54            </intent-filter>
-55        </activity>
-56
-57        <receiver android:name="com.example.wallpaperapp.BootCompletedReceiver" >
-57-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:9-51:20
-57-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:19-56
-58            <intent-filter>
-58-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:47:13-50:29
-59                <action android:name="android.intent.action.BOOT_COMPLETED" />
-59-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:48:17-79
-59-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:48:25-76
-60
-61                <category android:name="android.intent.category.LAUNCHER" />
-61-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:42:17-77
-61-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:42:27-74
-62            </intent-filter>
-63        </receiver>
-64>
-65    </application>
+53        <activity
+53-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:39:9-40:46
+54            android:name="com.example.wallpaperapp.PicViewActivity"
+54-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:39:19-50
+55            android:theme="@style/AppTheme" />
+55-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:40:13-44
+56        <activity
+56-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:41:9-48:20
+57            android:name="com.example.wallpaperapp.MainActivity"
+57-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:41:19-47
+58            android:exported="true"
+58-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:43:13-36
+59            android:theme="@style/AppTheme" >
+59-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:42:13-44
+60            <intent-filter>
+60-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:44:13-47:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:45:17-69
+61-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:45:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:17-77
+63-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:27-74
+64            </intent-filter>
+65        </activity>
 66
-67</manifest>
+67        <receiver
+67-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:50:9-58:20
+68            android:name="com.example.wallpaperapp.BootCompletedReceiver"
+68-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:50:19-56
+69            android:enabled="true"
+69-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:51:13-35
+70            android:exported="true"
+70-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:52:13-36
+71            android:priority="1000" >
+71-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:53:13-36
+72            <intent-filter>
+72-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:54:13-57:29
+73                <action android:name="android.intent.action.BOOT_COMPLETED" />
+73-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:55:17-79
+73-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:55:25-76
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:17-77
+75-->/home/ts/AndroidStudioProjects/WallPaperApp/app/src/main/AndroidManifest.xml:46:27-74
+76            </intent-filter>
+77        </receiver>
+78    </application>
+79
+80</manifest>
